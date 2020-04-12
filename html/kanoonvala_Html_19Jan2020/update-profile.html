@@ -1,0 +1,165 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kanoonvala</title>
+<link rel="icon" href="images/favicon.png">
+<link rel="stylesheet" href="scripts/bootstrap/css/bootstrap.css">
+<link rel="stylesheet" href="scripts/font-awesome/css/font-awesome.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/content-box.css">
+<link rel="stylesheet" href="css/image-box.css">
+<link rel="stylesheet" href="css/animations.css">
+<link rel="stylesheet" href="scripts/flexslider/flexslider.css">
+<link rel="stylesheet" href="css/skin.css">
+<link rel="stylesheet" href="css/custom.css">
+<script src="scripts/jquery.min.js"></script>
+<script src="scripts/script.js"></script>
+<script src="scripts/bootstrap/js/bootstrap.min.js"></script>
+<script src="scripts/parallax.min.js"></script>
+<script src="scripts/flexslider/jquery.flexslider-min.js"></script>
+<script src="scripts/jquery.progress-counter.js"></script>
+<script src="scripts/smooth.scroll.min.js"></script>
+</head>
+<body>
+<header class="fixed-top scroll-change" data-menu-anima="fade-in">
+  <div class="navbar navbar-default mega-menu-fullwidth navbar-fixed-top" role="navigation">
+    <div class="navbar-mini scroll-hide">
+      <div class="container">
+        <div class="nav navbar-nav navbar-left pb10 pull-right text-right"> <span><a href="login.html" class="text-danger"><i class="fa fa-sign-out"></i> Sign Out</a></span> </div>
+      </div>
+    </div>
+    <div class="navbar navbar-main">
+      <div class="container">
+        <div class="navbar-header admin_header">
+          <div class="row">
+            <div class="col-xs-6"><a class="navbar-brand" href="index.html"> <img class="logo-default" src="images/logo.png" alt="Kanoonvala" title="Kanoonvala" /></a> </div>
+            <div class="col-xs-6 text-right">
+              <div class="admin_user"><span>Welcome Admin</span> <img src="images/client1.jpg"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<div class="header-base mt30">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="text-left">
+          <h1>Update Profile</h1>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <ol class="breadcrumb b white">
+          <li><a href="lawyer-dashboard.html">Dashboard</a></li>
+          <li class="active">Update Profile</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="section-empty inner_page">
+  <div class="container content">
+    <form>
+      <div class="row">
+        <div class="col-lg-4 col-md-6 form-group">
+          <label>First Name</label>
+          <input type="text" class="form-control" placeholder="First Name">
+        </div>
+        <div class="col-lg-4 col-md-6 form-group">
+          <label>Last Name</label>
+          <input type="text" class="form-control" placeholder="Last Name">
+        </div>
+        <div class="col-lg-4 col-md-6 form-group">
+          <label>Email</label>
+          <input type="text" class="form-control" placeholder="Email">
+        </div>
+        <div class="col-lg-4 col-md-6 form-group">
+          <label>Mobile No <small>(Mandatory with OTP No.)</small></label>
+          <input type="text" class="form-control" placeholder="Mobile">
+        </div>
+        <div class="col-lg-4 col-md-6 form-group">
+          <label>City</label>
+          <select  class="form-control">
+            <option>Select City</option>
+          </select>
+        </div>
+        <div class="col-lg-4 col-md-6 form-group">
+          <label>State</label>
+          <select class="form-control">
+            <option>Select State</option>
+          </select>
+        </div>
+        <div class="col-lg-4 col-md-6 form-group">
+          <label>Postal Code</label>
+          <input type="text" class="form-control" placeholder="Postal Code">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 form-group">
+          <label>Address</label>
+          <textarea class="form-control" placeholder="Address"></textarea>
+        </div>
+        <div class="col-md-6 form-group">
+          <label>Specialization </label>
+          <textarea class="form-control" placeholder="Specialization"></textarea>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 form-group">
+          <label>Bar/ license Upload</label>
+          <br>
+          <div class="shrt_uploadedImgInput">
+            <div class="shrt_fileUpload"> <span>choose file</span>
+              <input type="file" class="form-control upload" id="licens" name="filePicWithLogo" />
+            </div>
+            <span id="shrt_filename" style="display: none;"></span> </div>
+        </div>
+        <div class="col-md-6 form-group">
+          <label>Profile Image update</label>
+          <br>
+          <div class="shrt_uploadedImgInput">
+            <div class="shrt_fileUpload"> <span>choose file</span>
+              <input type="file" class="form-control upload" id="profile" name="filePicWithLogo" />
+            </div>
+            <span id="shrt_filename2" style="display: none;"></span> </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 form-group">
+          <button type="submit" class="btn btn-lg btn-danger">Submit</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+<footer class="footer-base">
+  <div class="content">
+    <div class="row copy-row">
+      <div class="col-md-12 copy-text">© 2020 Kanoonvala All right reserved.</div>
+    </div>
+  </div>
+</footer>
+<i class="scroll-top scroll-top-mobile show fa fa-sort-asc"></i> 
+<script type="text/javascript">
+$(document).ready(function(e) {
+	$('input#licens').change(function(){
+		var filename = $('#licens').val(); 
+		$('#shrt_filename').show();
+		$('#shrt_filename').html(filename);
+	});
+});
+$(document).ready(function(e) {
+	$('input#profile').change(function(){
+		var filename = $('#profile').val(); 
+		$('#shrt_filename2').show();
+		$('#shrt_filename2').html(filename);
+	});
+});
+</script>
+</body>
+</html>
